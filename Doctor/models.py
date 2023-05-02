@@ -15,7 +15,7 @@ class DoctorRegistration(models.Model):
     city=models.CharField(max_length=50)
 
     def __str__(self):
-        return self.doctorid
+        return f'{self.doctorid} - {self.doctorname}'
     
 class DoctorLogin(models.Model):
     doctorid=models.CharField(max_length=100,primary_key=True)
